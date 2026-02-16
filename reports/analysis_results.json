@@ -1,0 +1,95 @@
+{
+  "total_posts": 320,
+  "pain_point_posts": 320,
+  "top_keywords": [
+    [
+      "more",
+      320
+    ],
+    [
+      "details",
+      320
+    ],
+    [
+      "about",
+      320
+    ],
+    [
+      "challenge",
+      320
+    ],
+    [
+      "looking",
+      131
+    ],
+    [
+      "better",
+      96
+    ],
+    [
+      "finance",
+      75
+    ],
+    [
+      "health",
+      61
+    ],
+    [
+      "lifestyle",
+      60
+    ],
+    [
+      "legal",
+      60
+    ],
+    [
+      "track",
+      47
+    ],
+    [
+      "frustrated",
+      47
+    ],
+    [
+      "productivity",
+      45
+    ],
+    [
+      "wish",
+      45
+    ],
+    [
+      "travel",
+      43
+    ],
+    [
+      "does",
+      42
+    ],
+    [
+      "anyone",
+      42
+    ],
+    [
+      "know",
+      42
+    ],
+    [
+      "good",
+      42
+    ],
+    [
+      "simple",
+      36
+    ]
+  ],
+  "category_counts": {
+    "productivity": 48,
+    "finance": 90,
+    "learning": 38,
+    "utilities": 94,
+    "other": 97,
+    "health": 61,
+    "travel": 43
+  }
+}
