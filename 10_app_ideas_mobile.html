@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10个App创意 - Reddit分析</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5; 
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .number {
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+        .tag {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: auto;
+        }
+        .section { margin-bottom: 10px; }
+        .label {
+            font-weight: 600;
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .content { color: #333; font-size: 14px; }
+        .evidence {
+            background: #fff3e0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #e65100;
+            margin-top: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 10个App创意</h1>
+    
+    <div class="card">
+        <div class="card-header">
+            <span class="number">1</span>
+            <span class="title">Dopamine Detox Assistant</span>
+            <span class="tag">🔥 热门</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">人们想要戒掉手机/社交媒体成瘾，但意志力不够</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">追踪多巴胺来源，渐进式减少协议，AI推荐替代活动</div>
+        </div>
+        <div class="evidence">证据: "9小时43分钟屏幕时间"、"YouTube Shorts失去控制"</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">2</span>
+            <span class="title">ADHD Focus Timer</span>
+            <span class="tag">🧠</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">ADHD用户觉得现有apps太复杂，需要极简工具</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">极简计时器，虚拟Body Doubling，任务分解助手</div>
+        </div>
+        <div class="evidence">证据: "ADHD is disabling" (3477 upvotes), r/ADHD 250条帖子</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">3</span>
+            <span class="title">Energy Tracker</span>
+            <span class="tag">⚡</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">按精力而不是时间安排任务</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">全天追踪精力水平，AI根据精力模式推荐任务</div>
+        </div>
+        <div class="evidence">证据: "下班后20分钟决定整晚" (420 upvotes)</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">4</span>
+            <span class="title">Social Activity Planner</span>
+            <span class="tag">👥</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">组织朋友活动太麻烦，要建群、收集回复、跟进</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">一键邀请+RSVP，活动卡片，自动提醒</div>
+        </div>
+        <div class="evidence">证据: "组织朋友活动太麻烦"</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">5</span>
+            <span class="title">Morning Routine Builder</span>
+            <span class="tag">🌅</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">早上不知道干嘛，只能刷手机</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">简单模板，无复杂设置，习惯渐进叠加</div>
+        </div>
+        <div class="evidence">证据: "早上除了刷手机干嘛" (415 upvotes)</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">6</span>
+            <span class="title">Learning & Course Tracker</span>
+            <span class="tag">📚</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">追踪学习进度太麻烦，学了就忘</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">统一学习内容入口，AI总结知识点，间隔重复复习</div>
+        </div>
+        <div class="evidence">证据: "Is it possible to teach yourself any subject?"</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">7</span>
+            <span class="title">Expense & Money Tracker</span>
+            <span class="tag">💰</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">记账太麻烦，坚持不下来</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">3秒极速记账，AI自动分类，预算超支提醒</div>
+        </div>
+        <div class="evidence">证据: "What makes you stick with expense tracker?" - friction是问题</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">8</span>
+            <span class="title">File & Document Finder</span>
+            <span class="tag">🔍</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">文件太多找不到，浪费时间搜索</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">全文搜索，AI理解内容，自动标签，快速预览</div>
+        </div>
+        <div class="evidence">证据: "在1392983个文件夹里找一个文件"</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">9</span>
+            <span class="title">Burnout Recovery Assistant</span>
+            <span class="tag">🛋️</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">工作倦怠，想辞职但不敢，需要系统恢复</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">倦怠程度评估，恢复计划生成，小步尝试建议</div>
+        </div>
+        <div class="evidence">证据: "Office toxicity" (81 upvotes)</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="number">10</span>
+            <span class="title">Decision & Choice Helper</span>
+            <span class="tag">🤔</span>
+        </div>
+        <div class="section">
+            <div class="label">需求</div>
+            <div class="content">决策疲劳，选择太多</div>
+        </div>
+        <div class="section">
+            <div class="label">解决方案</div>
+            <div class="content">减少可选数量，默认选项推荐，决策模板</div>
+        </div>
+        <div class="evidence">证据: "Gap between decision and action" (28 upvotes)</div>
+    </div>
+
+    <div class="footer">
+        <p>数据来源: 1000条Reddit帖子分析</p>
+        <p>Generated: 2026-02-26</p>
+    </div>
+</body>
+</html>
