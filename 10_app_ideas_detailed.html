@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10个App详细方案 - 可落地版本</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5; 
+            line-height: 1.6;
+            padding: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .number {
+            background: #667eea;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .tag {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: auto;
+        }
+        .section { margin-top: 12px; }
+        .label {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .content { color: #444; font-size: 14px; }
+        .content ul { margin-left: 20px; margin-top: 6px; }
+        .content li { margin-bottom: 4px; }
+        .user-flow {
+            background: #fff8e1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 4px solid #ffc107;
+        }
+        .user-flow-title {
+            font-weight: 700;
+            color: #f57c00;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+        .key-feature {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: #1565c0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 10个App详细方案</h1>
+    
+    <!-- 1. Morning Routine -->
+    <div class="card">
+        <div class="title">
+            <span class="number">1</span>
+            早起不知道干嘛 - Morning Routine
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">早上醒来不知道干什么，只能刷手机打发时间</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>起床后直接显示一个问题</strong>："今天早上你想做什么？"</li>
+                    <li><strong>用户直接点击选择</strong>：冥想 / 写作 / 运动 / 阅读 / 听播客</li>
+                    <li><strong>点击后直接开始</strong>，不需要任何设置</li>
+                    <li><strong>计时器</strong>：默认15分钟，到点震动提醒</li>
+                    <li><strong>完成后</strong>：显示"下一个做什么？"</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 用户打开App后：</div>
+            1. 屏幕显示：早上好！今天想做什么？<br>
+            2. 用户点击"冥想"<br>
+            3. 直接开始15分钟冥想计时<br>
+            4. 计时结束震动<br>
+            5. 显示：再做一个？阅读？运动？
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：0设置，打开就做，做完就问下一个</strong>
+        </div>
+    </div>
+
+    <!-- 2. ADHD Focus Timer -->
+    <div class="card">
+        <div class="title">
+            <span class="number">2</span>
+            ADHD专注 - ADHD Focus Timer
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">现有计时器太复杂，设置这个设置那个，ADHD用户还没开始就忘了要干嘛</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>只有一个按钮</strong>："开始专注"</li>
+                    <li><strong>点击就開始</strong>，默认25分钟</li>
+                    <li><strong>Body Doubling模式</strong>：打开摄像头，让别人也能看到你</li>
+                    <li><strong>结束提醒</strong>：震动+声音，不会错过</li>
+                    <li><strong>一天结束后</strong>：显示"今天专注了X次"</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 用户打开App后：</div>
+            1. 屏幕中央：一个绿色按钮"开始专注"<br>
+            2. 点击 -> 25分钟倒计时开始<br>
+            3. 屏幕显示：正在专注... (仅此而已)<br>
+            4. 25分钟后震动，屏幕显示"完成！"<br>
+            5. 点击继续或结束
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：1个按钮，1个倒计时，不需要任何选择</strong>
+        </div>
+    </div>
+
+    <!-- 3. Dopamine Detox -->
+    <div class="card">
+        <div class="title">
+            <span class="number">3</span>
+            手机成瘾 - Dopamine Detox
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">刷短视频停不下来，YouTube Shorts一刷就是2小时</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>选择想戒掉的App</strong>：YouTube / TikTok / Twitter / Instagram</li>
+                    <li><strong>设置"冷静期"</strong>：比如想刷时，先等5分钟</li>
+                    <li><strong>5分钟倒计时</strong>：期间显示替代活动</li>
+                    <li><strong>替代活动推荐</strong>：深呼吸 / 起来走动 / 喝杯水</li>
+                    <li><strong>记录</strong>：今天成功抵抗了X次</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 用户想刷短视频时：</div>
+            1. 打开App，点击"我想刷YouTube"<br>
+            2. App显示：再等5分钟？深呼吸3次？<br>
+            3. 5分钟倒计时开始<br>
+            4. 时间到：可以看或"再等5分钟试试？"<br>
+            5. 成功抵抗 -> 获得小星星
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：不是强制禁止，而是延迟满足 + 替代方案</strong>
+        </div>
+    </div>
+
+    <!-- 4. Social Planner -->
+    <div class="card">
+        <div class="title">
+            <span class="number">4</span>
+            组局太麻烦 - Social Planner
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">组织朋友吃饭/运动，要建群、挨个问、收集回复，麻烦死了</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>创建一个活动</strong>：选择类型（吃饭/运动/看电影）</li>
+                    <li><strong>一键发送邀请链接</strong>：发给微信/WhatsApp朋友</li>
+                    <li><strong>朋友点击链接</strong>：直接显示"参加 / 不参加"</li>
+                    <li><strong>自动汇总</strong>：谁参加，一目了然</li>
+                    <li><strong>活动提醒</strong>：当天早上提醒</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 组局流程：</div>
+            1. 点击"创建活动"<br>
+            2. 选择：周六下午足球<br>
+            3. 一键复制邀请链接 -> 发到群<br>
+            4. 朋友点击链接 -> 点击"参加"<br>
+            5. 你看到：4人参加
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：创建 -> 分享链接 -> 对方点击参加，不需要注册</strong>
+        </div>
+    </div>
+
+    <!-- 5. Expense Tracker -->
+    <div class="card">
+        <div class="title">
+            <span class="number">5</span>
+            记不住钱 - Expense Tracker
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">记账太麻烦，3分钟都坚持不了，不知道钱花哪了</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>主屏幕只有一个输入框</strong>："今天花了多少？"</li>
+                    <li><strong>输入数字就自动分类</strong>：吃饭/交通/购物/其他</li>
+                    <li><strong>不需要选择类别</strong>，AI自动判断</li>
+                    <li><strong>每周显示</strong>：这周花了X，本周预算Y</li>
+                    <li><strong>超支提醒</strong>：这周吃饭超预算了</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 记账流程：</div>
+            1. 打开App<br>
+            2. 输入"45" (自动显示"午餐？") <br>
+            3. 点击确认<br>
+            4. 完成！仅需3秒<br>
+            5. 晚上打开：今天总计X，本周Y
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：3秒记账，不需要选择类别，AI自动分类</strong>
+        </div>
+    </div>
+
+    <!-- 6. Learning Tracker -->
+    <div class="card">
+        <div class="title">
+            <span class="number">6</span>
+            学了就忘 - Learning Tracker
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">看了很多课程/书/播客，学完就忘了，等于没学</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>记录学习内容</strong>：输入"今天看了X课程第3集"</li>
+                    <li><strong>自动提取关键点</strong>：AI总结3个要点</li>
+                    <li><strong>定期复习提醒</strong>：3天后提醒复习</li>
+                    <li><strong>复习时只显示要点</strong>：不需重看整个视频</li>
+                    <li><strong>显示学习进度</strong>：本月学习了X小时</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 学习流程：</div>
+            1. 看完一个视频/章节<br>
+            2. 打开App，输入"看了Python教程第5课"<br>
+            3. App自动保存：提取3个要点<br>
+            4. 3天后提醒：复习"Python教程第5课"<br>
+            5. 点击复习，只看3个要点
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：记录 -> AI提取要点 -> 定期复习要点</strong>
+        </div>
+    </div>
+
+    <!-- 7. File Finder -->
+    <div class="card">
+        <div class="title">
+            <span class="number">7</span>
+            文件找不到 - File Finder
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">文件存在桌面/文件夹里，找不到，浪费时间</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>一个搜索框</strong>：输入"上个月的报告"</li>
+                    <li><strong>搜索所有位置</strong>：桌面/下载/文档/云盘</li>
+                    <li><strong>AI理解意图</strong>：即使不记得文件名</li>
+                    <li><strong>显示预览</strong>：点击前能看到内容</li>
+                    <li><strong>一键打开</strong></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 找文件流程：</div>
+            1. 打开App（在Menu Bar/Dock）<br>
+            2. 输入"上周会议记录"<br>
+            3. 显示：3个相关文件 + 预览<br>
+            4. 点击第2个 -> 直接打开<br>
+            5. 仅需5秒
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：全局搜索 + AI理解意图 + 快速预览</strong>
+        </div>
+    </div>
+
+    <!-- 8. Energy Tracker -->
+    <div class="card">
+        <div class="title">
+            <span class="number">8</span>
+            精力管理 - Energy Tracker
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">按时间安排任务不管用，有时早上精力好，有时下午才来状态</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>每小时问一次</strong>："现在精力如何？"</li>
+                    <li><strong>用户点击</strong>：🔋满 / ⚡一般 / 🪫累</li>
+                    <li><strong>AI推荐任务</strong>：根据当前精力推荐</li>
+                    <li><strong>精力曲线图</strong>：看什么时候精力最好</li>
+                    <li><strong>自动安排</strong>：精力好时做重要的事</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 使用流程：</div>
+            1. 下午2点，App通知：精力如何？<br>
+            2. 点击"🪫累"<br>
+            3. App显示："建议做简单任务：整理邮件"<br>
+            4. 晚上6点，点击"🔋满"<br>
+            5. App显示："现在适合做深度工作！"
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：精力问卷 -> AI任务推荐 -> 了解自己的精力规律</strong>
+        </div>
+    </div>
+
+    <!-- 9. Burnout Recovery -->
+    <div class="card">
+        <div class="title">
+            <span class="number">9</span>
+            工作倦怠 - Burnout Recovery
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">每天上班很累，想辞职但不敢，不知道是不是倦怠</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>每日倦怠问卷</strong>：今天工作感觉如何？</li>
+                    <li><strong>评分系统</strong>：1-10分，追踪趋势</li>
+                    <li><strong>小步尝试建议</strong>：这周尝试做一件小事</li>
+                    <li><strong>恢复计划模板</strong>：休息/边界/兴趣</li>
+                    <li><strong>不是让你辞职</strong>，而是找到平衡</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 使用流程：</div>
+            1. 每天下班时打开App<br>
+            2. 回答：今天工作累吗？(1-10分)<br>
+            3. App显示趋势：过去7天平均6.5分<br>
+            4. 给出建议："尝试每周三准时下班？"<br>
+            5. 记录执行情况
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：量化倦怠程度 + 小步改善建议 + 追踪进展</strong>
+        </div>
+    </div>
+
+    <!-- 10. Decision Helper -->
+    <div class="card">
+        <div class="title">
+            <span class="number">10</span>
+            选择困难 - Decision Helper
+        </div>
+        
+        <div class="section">
+            <div class="label">❌ 问题</div>
+            <div class="content">每天做太多选择，选哪个都纠结，浪费时间</div>
+        </div>
+        
+        <div class="section">
+            <div class="label">✅ 具体解决方案</div>
+            <div class="content">
+                <ul>
+                    <li><strong>输入选项</strong>：A还是B还是C？</li>
+                    <li><strong>AI帮你选</strong>：基于你提供的信息</li>
+                    <li><strong>显示理由</strong>：为什么推荐这个</li>
+                    <li><strong>快速决策模式</strong>：默认选项推荐</li>
+                    <li><strong>记录决定</strong>：以后回顾</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="user-flow">
+            <div class="user-flow-title">📱 决策流程：</div>
+            1. 纠结：晚上吃火锅还是烧烤？<br>
+            2. 打开App，输入两个选项<br>
+            3. App问："有什么限制？"<br>
+            4. 输入："要减肥"<br>
+            5. App："烧烤更健康，推荐烧烤"<br>
+            6. 采纳或忽略
+        </div>
+        
+        <div class="key-feature">
+            <strong>核心：减少选择时间 + AI提供理由 + 快速决定</strong>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>数据来源: 1000条Reddit帖子分析</p>
+        <p>Generated: 2026-02-26</p>
+    </div>
+</body>
+</html>
