@@ -1,0 +1,31 @@
+=== REDDIT POSTS SUMMARY ===
+
+Total posts: 1000
+
+By subreddit:
+  productivity: 250
+  getdisciplined: 250
+  ADHD: 250
+  entrepreneur: 250
+
+Top 20 by score:
+  [3477] Why is it so hard for so many people to accept that ADHD is,... (ADHD)
+  [2972] How i finally stopped bed rotting for 4 hours every night (w... (productivity)
+  [1391] I've been working from my couch for two years and I think it... (productivity)
+  [1341] Those who grew up poor and became millionaires before 35, wh... (entrepreneur)
+  [1107] Knowledge that changed my life: A craving makes your brain m... (getdisciplined)
+  [441] Boss forbid us from using headphones, loud open space wehre ... (ADHD)
+  [431] I’m worried my relationship is ruining my discipline... (getdisciplined)
+  [427] Niched into serving only pediatric dental offices and went f... (entrepreneur)
+  [420] The 20 minutes after I get home from work control my entire ... (getdisciplined)
+  [415] Things to do in the morning other than brain rot... (productivity)
+  [395] I miss when YT was just long videos... (productivity)
+  [387] I really want to understand how much you all work everyday... (productivity)
+  [382] Accidentally saw my screen time report and honestly want to ... (getdisciplined)
+  [359] After building MVPs for 30 startups, I realized most founder... (entrepreneur)
+  [306] I tried Dopamine detox for few weeks here is my results... (productivity)
+  [293] I stopped tracking 10 habits and started defining a “minimum... (productivity)
+  [250] How to shut up.... (ADHD)
+  [242] Found a Bible study store doing $214K/month and at least 6 c... (entrepreneur)
+  [241] What opened your eyes up to the wealth in the world?... (entrepreneur)
+  [214] "I don't have time" is the biggest lie you tell yourself eve... (productivity)
