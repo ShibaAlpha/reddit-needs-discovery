@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorningFlow - 技术方案</title>
+    <style>
+        :root {
+            --primary: #FF8C42;
+            --secondary: #FFD166;
+            --accent: #FF6B6B;
+            --bg: #FFF9F5;
+            --surface: #FFFFFF;
+            --text: #2D3436;
+            --text-secondary: #636E72;
+            --success: #00B894;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 32px 0;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 24px;
+            margin-bottom: 24px;
+            color: white;
+        }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        .card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        .tag {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--text);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .tag.swiftui { background: #FF6B6B; color: white; }
+        .tag.swiftdata { background: #00B894; color: white; }
+        .tag.cloudkit { background: #74B9FF; color: white; }
+        ul { margin-left: 20px; }
+        li { margin-bottom: 8px; color: var(--text-secondary); }
+        .section { margin-bottom: 32px; }
+        .section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .feature {
+            background: var(--surface);
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        .feature .icon { font-size: 24px; margin-bottom: 8px; }
+        .feature .label { font-size: 13px; font-weight: 500; }
+        .stats {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+        .stat {
+            background: var(--surface);
+            padding: 16px;
+            border-radius: 12px;
+            min-width: 100px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        .stat .num { font-size: 24px; font-weight: 700; color: var(--primary); }
+        .stat .label { font-size: 11px; color: var(--text-secondary); }
+        .phase {
+            background: linear-gradient(135deg, #f8f9fa, #fff);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            margin-bottom: 12px;
+            border-radius: 0 12px 12px 0;
+        }
+        .phase h4 { font-size: 15px; margin-bottom: 8px; }
+        .phase .week { font-size: 12px; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌅 MorningFlow</h1>
+        <p>晨间Routine App - 技术方案</p>
+    </div>
+
+    <div class="card">
+        <span class="tag swiftui">SwiftUI</span>
+        <span class="tag swiftdata">SwiftData</span>
+        <span class="tag cloudkit">CloudKit</span>
+        <p style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">
+            Gamified morning routine tracker，帮助用户养成健康的早晨习惯。
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>📱 核心功能</h3>
+        <div class="feature-grid">
+            <div class="feature"><div class="icon">✅</div><div class="label">任务追踪</div></div>
+            <div class="feature"><div class="icon">🔥</div><div class="label">连续打卡</div></div>
+            <div class="feature"><div class="icon">🏆</div><div class="label">成就系统</div></div>
+            <div class="feature"><div class="icon">📊</div><div class="label">数据统计</div></div>
+            <div class="feature"><div class="icon">☁️</div><div class="label">iCloud同步</div></div>
+            <div class="feature"><div class="icon">🔔</div><div class="label">提醒通知</div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>📊 开发计划</h3>
+        <div class="phase">
+            <h4>Phase 1: 核心功能</h4>
+            <div class="week">Week 1-2</div>
+            <ul><li>项目搭建 + SwiftData模型</li><li>HomeView + 任务完成流程</li><li>基础打卡追踪</li></ul>
+        </div>
+        <div class="phase">
+            <h4>Phase 2: 管理功能</h4>
+            <div class="week">Week 3</div>
+            <ul><li>创建/编辑Routine</li><li>任务管理</li><li>定时提醒</li></ul>
+        </div>
+        <div class="phase">
+            <h4>Phase 3: 互动增强</h4>
+            <div class="week">Week 4</div>
+            <ul><li>统计页面</li><li>成就系统</li><li>iCloud同步</li></ul>
+        </div>
+        <div class="phase">
+            <h4>Phase 4: 完善</h4>
+            <div class="week">Week 5</div>
+            <ul><li>社交分享</li><li>深色模式</li><li>App Store资源</li></ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🎨 UI 预览</h3>
+        <div class="stats">
+            <div class="stat"><div class="num">3</div><div class="label">主Tab</div></div>
+            <div class="stat"><div class="num">7+</div><div class="label">页面</div></div>
+            <div class="stat"><div class="num">15+</div><div class="label">成就</div></div>
+            <div class="stat"><div class="num">8</div><div class="label">配色</div></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🚀 什么时候开始写代码？</h2>
+        <p style="color: var(--text-secondary); font-size: 14px;">
+            技术方案已就绪！回复我就可以开始coding～
+        </p>
+    </div>
+</body>
+</html>
